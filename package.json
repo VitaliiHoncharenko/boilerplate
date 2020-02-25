@@ -1,0 +1,72 @@
+{
+  "name": "boilerplate",
+  "version": "0.0.1",
+  "description": "front-end boilerplate",
+  "scripts": {
+    "precommit": "lint-staged",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bash ./_scripts/setup.sh",
+    "start": "webpack-dev-server --config ./config/webpack.dev.js",
+    "build": "webpack --progress --config ./config/webpack.prod.js",
+    "build-core": "rollup -c ./main-core/rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@git.slygods.com:777/path/to/repo.git"
+  },
+  "author": "yarik",
+  "license": "ISC",
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-hot-loader": "^4.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta",
+    "@babel/plugin-external-helpers": "^7.0.0-beta",
+    "@babel/preset-env": "^7.0.0-beta",
+    "@babel/preset-react": "^7.0.0-beta",
+    "autoprefixer": "^9.0.0",
+    "babel-loader": "^8.0.0-beta",
+    "case-sensitive-paths-webpack-plugin": "^2.1.2",
+    "css-hot-loader": "^1.4.0",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.1.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-import-resolver-webpack": "^0.10.1",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.10.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^0.14.3",
+    "image-webpack-loader": "^4.3.1",
+    "lint-staged": "^7.2.0",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.9.2",
+    "optimize-css-assets-webpack-plugin": "^5.0.0",
+    "postcss-flexbugs-fixes": "^4.0.0",
+    "postcss-loader": "^2.1.6",
+    "rollup": "^0.63.4",
+    "rollup-plugin-babel": "^4.0.0-beta",
+    "rollup-plugin-commonjs": "^9.1.4",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-postcss": "^1.6.2",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "stylelint": "^9.4.0",
+    "stylelint-config-rational-order": "0.0.2",
+    "stylelint-config-recommended-scss": "^3.2.0",
+    "stylelint-scss": "^3.2.0",
+    "svg-url-loader": "^2.3.2",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-manifest-plugin": "^2.0.3"
+  },
+  "eslintIgnore": [
+    "index.js"
+  ]
+}
